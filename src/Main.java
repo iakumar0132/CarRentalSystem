@@ -16,6 +16,7 @@ class Car {
         this.basePricePerDay = basePricePerDay;
         this.isAvailable = true;
     }
+
     public String getCarId() {
         return carId;
     }
@@ -239,16 +240,31 @@ class CarRentalSystem {
     }
 
 }
-public class Main{
+
+public class Main {
     public static void main(String[] args) {
         CarRentalSystem rentalSystem = new CarRentalSystem();
 
         Car car1 = new Car("C001", "Toyota", "Camry", 60.0); // Different base price per day for each car
         Car car2 = new Car("C002", "Honda", "Accord", 70.0);
         Car car3 = new Car("C003", "Mahindra", "Thar", 150.0);
+        Car car4 = new Car("C004", "Toyota", "Supraa", 1000.0);
+        Car car5 = new Car("C005", "Mahindra", "Scorpio", 100.0);
+        Car car6 = new Car("C006", "Ford", "Mustang", 700.0);
+        Car car7 = new Car("C007", "Volkswagen", "Golf", 500.0);
+        Car car8 = new Car("C008", "Mercedes", "Mercedes-Benz C-Class", 800.0);
+        Car car9 = new Car("C009", "Hyundai", "Elantra", 400.0);
+        Car car10 = new Car("C0010", "BMW", "BMW 3 Series", 1000.0);
         rentalSystem.addCar(car1);
         rentalSystem.addCar(car2);
         rentalSystem.addCar(car3);
+        rentalSystem.addCar(car4);
+        rentalSystem.addCar(car5);
+        rentalSystem.addCar(car6);
+        rentalSystem.addCar(car7);
+        rentalSystem.addCar(car8);
+        rentalSystem.addCar(car9);
+        rentalSystem.addCar(car10);
 
         rentalSystem.menu();
     }
